@@ -1,5 +1,5 @@
 .App {
-  background-image: url("../Images/Background.jpg");
+  background-image: url("../public/Images/Background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -45,4 +45,26 @@
 .HeaderButton:hover span:after{
   opacity: 1;
   right: 0;
+}
+.Home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20vh;
+  position: relative;
+}
+.Headshot{
+  width: 450px;
+  border-radius: 50%;
+  border: 5px solid;
+}
+.HomeContent{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 35px;
+  width: 600px;
+}
+.HomeContentDescription{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  width: 600px;
 }
