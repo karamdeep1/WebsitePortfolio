@@ -5,11 +5,16 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
 .Header{
   height: 50px;
   width: 100vw;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color:#f5efd7;
 }
 .HeaderButton{
   height: 50px;
@@ -17,13 +22,12 @@
   position: relative;
   font-family: 'Roboto Mono', monospace;
   font-size: 25px;
-  background-color: transparent;
   text-align: center;
   border: none;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  
+  background-color: transparent;
 }
 .HeaderButton span{
   cursor: pointer;
@@ -62,9 +66,48 @@
   font-family: 'Roboto Mono', monospace;
   font-size: 35px;
   width: 600px;
+  text-align: center;
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
 }
 .HomeContentDescription{
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   width: 600px;
+}
+.AboutMe{
+  background-image: url("../public/Images/Background.jpg");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100%;
+  position: absolute;
+}
+.AboutMeContent{
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+.ComputerImage{
+  width: 500px;
+  border-radius: 50px;
+}
+.AboutMeText{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  width: 600px;
+}
+.AboutMeHeader{
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  width: fit-content;
+  height: fit-content;
+  line-height: 0px;
+  letter-spacing: 5px;
 }
