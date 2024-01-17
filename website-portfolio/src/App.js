@@ -2,11 +2,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="AppSection">
       <header className="Header">
-        <button className="HeaderButton"><span>Home</span></button>
+        <a href="#AppSection">
+          <button className="HeaderButton"><span>Home</span></button> 
+        </a>
+        <a href="#AboutMeSection">
         <button className="HeaderButton"><span>About Me</span></button>
+        </a>
+        <a href="#ProjectSection">
         <button className="HeaderButton"><span>Projects</span></button>
+        </a>
         <button className="HeaderButton"><span>Contact</span></button>
       </header>
       <div className="Home" id="HomeSection">
