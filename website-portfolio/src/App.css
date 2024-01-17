@@ -1,19 +1,11 @@
-.App {
-  background-image: url("../public/Images/Background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
+/* Above Header Section */
 .Header{
   height: 50px;
   width: 100vw;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 1;
   background-color:#f5efd7;
 }
 .HeaderButton{
@@ -50,6 +42,22 @@
   opacity: 1;
   right: 0;
 }
+
+
+/* Home Section */
+.App {
+  background-image: url("../public/Images/Background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:absolute;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
 .Home{
   display: flex;
   align-items: center;
@@ -62,20 +70,16 @@
   border-radius: 50%;
   border: 5px solid;
 }
-.HomeContent{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 35px;
+#HomeHeader{
   width: 600px;
   text-align: center;
   text-decoration: underline 5px;
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
 }
-.HomeContentDescription{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  width: 600px;
-}
+
+
+/* About Me Section */
 .AboutMe{
   background-image: url("../public/Images/Background.jpg");
   height: 100vh;
@@ -94,20 +98,134 @@
 .ComputerImage{
   width: 500px;
   border-radius: 50px;
+  border-radius: 50px;
 }
-.AboutMeText{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  width: 600px;
-}
-.AboutMeHeader{
+#AboutMeHeader{
   text-decoration: underline 5px;
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
-  width: fit-content;
-  height: fit-content;
   line-height: 0px;
   letter-spacing: 5px;
+}
+
+
+/* Project Section */
+.Projects{
+  background-image: url("../public/Images/Background.jpg");
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 200%;
+  position: absolute;
+  flex-direction: column;
+  padding-top: 450px;
+  gap: 200px;
+}
+.Project{
+  display: flex;
+}
+.AISumProjectDescription{
+  padding-left: 200px;
+}
+.AISumImage{
+  border-radius: 50px;
+  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+.AISumImage:hover{
+  box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+#ProjectHeaderText{
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  line-height: 0px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#ProjectContentText{
+  padding-top: 50px;
+}
+.ProjectSkills{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1em;
+  width: 600px;
+}
+.ProjectButtonLinks{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 18px;
+}
+.ProjectButton{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #e4ddc1;
+  transition: all .2s ease-in-out;
+  font-family: 'Roboto Mono', monospace;
+}
+.ProjectButton:hover{
+  transform: scale(1.1);
+}
+.ScannaImage{
+  height: 450px;
+  border-radius: 50px;
+  margin-top: 100px;
+  box-shadow: 0 4px 4px 0 rgb(207, 40, 40, 1);
+  transition: 0.3s;
+}
+.ScannaImage:hover{
+  box-shadow: 0px 0px 8px 8px rgb(207, 40, 40, 1);
+  transition: 0.3s;
+}
+.ScannaProjectDescription{
+  padding-right: 100px;
+}
+#ContentLists{
+  width: 600px;
+  display: flex;
+}
+#ScannaButtonLinks{
+  justify-content: right;
+}
+#ScannaTitle{
+  display: flex;
+  justify-content: space-evenly;
+}
+.ScannaGithubButton{
+  margin-top: 60px;
+}
+
+/* Dynamic Classes */
+.HeaderText{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+.Skills{
+  font-family: 'Roboto Mono', monospace;
+  background-color: #e4ddc1;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  transition: all .2s ease-in-out;
+}
+.Skills:hover{
+  transform: scale(1.1);
+}
+.ContentDescription{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  width: 600px;
 }
