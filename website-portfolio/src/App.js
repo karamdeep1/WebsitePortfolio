@@ -20,7 +20,7 @@ function App() {
 
     return(
       <form ref={form} onSubmit={sendEmail}>
-        <h3>Get In Touch!</h3>
+        <h3>Get In Touch Over Email!</h3>
         <input type="text" placeholder="Your Name" name="user_name" required/> 
         <input type="email" placeholder="Your Email" name="user_email" required/> 
         <textarea rows="4" placeholder="Message" name="message" required/>
@@ -79,7 +79,7 @@ function App() {
           <p className="ContentDescription">
             I grew up in Maryland and I always was on a computer doing something. 
             I eventually discovered programming and knew I found what I wanted to do as a career.
-            As of now I am a senior in High School and also a Defense Intern. As a Defense Intern I
+            As of now I am a senior in High School and work as an Defense Intern (More about that in the work section). As a Defense Intern I
             rotate between 4 defense contractors, spending 3 months at each doing software engineering
             and cyber security. I am familiar with Java, HTML, CSS, Javascript, ReactJS, and am currently focusing C++.
           </p>
