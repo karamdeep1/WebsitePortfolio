@@ -61,7 +61,7 @@ html{
 
 /* Home Section */
 .App {
-  background-image: url("../public/Images/Background.jpg");
+  background-image: url("../public/Images/whitebackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -104,6 +104,9 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 .AboutMeContent{
   display: flex;
@@ -133,7 +136,6 @@ html{
   align-items: center;
   gap: 200px;
   flex-direction: column;
-  background-image: url("../public/Images/whitebackground.jpg");
 }
 .Project{
   display: flex;
@@ -242,7 +244,6 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../public/Images/DefenseInterns.png");
 }
 .WorkTitle{
   font-size: 100px;
@@ -363,7 +364,6 @@ html{
 #DefenseInternsWebsite{
   width: 600px;
   font-size: 20px;
-  background-color: white;
 }
 #DIWebButton{
   text-align: center;
