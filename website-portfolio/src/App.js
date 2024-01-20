@@ -8,10 +8,13 @@ function App() {
           <button className="HeaderButton"><span>Home</span></button> 
         </a>
         <a href="#AboutMeSection">
-        <button className="HeaderButton"><span>About Me</span></button>
+          <button className="HeaderButton"><span>About Me</span></button>
         </a>
         <a href="#ProjectSection">
-        <button className="HeaderButton"><span>Projects</span></button>
+          <button className="HeaderButton"><span>Projects</span></button>
+        </a>
+        <a href="#WorkSection">
+          <button className="HeaderButton"><span>Work</span></button>
         </a>
         <button className="HeaderButton"><span>Contact</span></button>
       </header>
@@ -94,62 +97,138 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="Project">
-        <div className="ScannaProjectDescription">
-            <div id="ScannaTitle">
-              <p className="HeaderText" id="ProjectHeaderText">
-                <h1>Scanner</h1>
+        <div className="Project" id="Scanna">
+          <div className="ScannaProjectDescription">
+              <div id="ScannaTitle">
+                <p className="HeaderText" id="ProjectHeaderText">
+                  <h1>Scanner</h1>
+                </p>
+                <div className="ScannaGithubButton">
+                  <a href="https://github.com/karamdeep1/Scanna" target="_blank" rel="noreferrer">
+                    <button className="ProjectButton"><img src="Images/GithubLogo.png" alt="Github" width="50px"/></button>
+                  </a>
+                </div>
+              </div>
+              <p className="ContentDescription" id="ProjectContentText">
+                Scan any barcode and the applicaton puts it into a database. The user can also manipulate information of the barcode, create a new one, or delete any existing barcode. 
+                The application also allows for the user to search the database for any barcode and has a user account system. Users can also import and export excel files as data.
               </p>
-              <div className="ScannaGithubButton">
-                <a href="https://github.com/karamdeep1/Scanna" target="_blank" rel="noreferrer">
-                  <button className="ProjectButton"><img src="Images/GithubLogo.png" alt="Github" width="50px"/></button>
+              <div id="ContentLists">
+                <ul className="ContentDescription">
+                  <li>Desktop Application</li>
+                  <li>Frontend: JavaFX</li>
+                  <li>Backend: MySQL</li>
+                  <li>Scenebuilder</li>
+                </ul>
+                <ul className="ContentDescription">
+                  <li>Barcode Scanners</li>
+                  <li>Excel</li>
+                </ul>
+              </div>
+              <div className="ProjectSkills">
+                <div className="Skills">
+                  <p
+                    >JavaFX
+                  </p>
+                  <img src="Images/JavaFXLogo.png" alt="reactlogo" width="120px"></img>
+                </div>
+                <div className="Skills">
+                  <p
+                    >MySQL
+                  </p>
+                  <img src="Images/MySQLLogo.png" alt="reactlogo" width="80px"></img>
+                </div>
+                <div className="Skills">
+                  <p
+                    >Excel
+                  </p>
+                  <img src="Images/ExcelLogo.png" alt="reactlogo" width="80px"></img>
+                </div>
+                <div className="Skills">
+                  <p>
+                    Scenebuilder
+                  </p>
+                  <img src="Images/SceneBuilderLogo.webp" alt="reactlogo" width="50px"></img>
+                </div>
+              </div>
+            </div>
+            <img className="ScannaImage" src="Images/ScannaLogo.png" alt="ScannaLogo"/>
+          </div>
+        </div>
+      <div className="WorkExperience" id="WorkSection">
+        <div className="DefenseIntern">
+          <h1 className="WorkTitle" id="DefenseInternTitle"><span style={{color: "orange"}}>Defense Intern</span></h1>
+          <a id="DIWebButton" href="https://defenseinterns.com" target="_blank" rel="noreferrer">
+            <button className="ProjectButton" id="DefenseInternsWebsite">Check out the Defense Intern website!</button>
+          </a>
+        </div>
+        <div className="DefenseInternCompanies">
+          <div className="cardlists">
+            <div className="card">
+              <div className="cardbody">
+                <div className="CompanyName">
+                  <h2 className="Title">SURVICE Engineering</h2>
+                </div>
+                <a href="https://www.survice.com" target="_blank" rel="noreferrer">
+                  <button className="BusinessWebsiteButton">Click to see their website!</button>
                 </a>
+                <p className="CompanyDescription">
+                  <ul className="ListDescription">
+                    <li className="ListBulletPoint">IT help desk answering tickets of various tiers</li>
+                    <li className="ListBulletPoint">Network administration</li>
+                    <li className="ListBulletPoint">Prepared laptops for new/existing employees</li>
+                  </ul>
+                </p>
               </div>
             </div>
-            <p className="ContentDescription" id="ProjectContentText">
-              Scan any barcode and the applicaton puts it into a database. The user can also manipulate information of the barcode, create a new one, or delete any existing barcode. 
-              The application also allows for the user to search the database for any barcode and has a user account system. Users can also import and export excel files as data.
-            </p>
-            <div id="ContentLists">
-              <ul className="ContentDescription">
-                <li>Desktop Application</li>
-                <li>Frontend: JavaFX</li>
-                <li>Backend: MySQL</li>
-                <li>Scenebuilder</li>
-              </ul>
-              <ul className="ContentDescription">
-                <li>Barcode Scanners</li>
-                <li>Excel</li>
-              </ul>
+            <div className="card">
+              <div className="cardbody">
+                <div className="CompanyName">
+                  <h2 className="Title">Emerald Technical Solutions</h2>
+                </div>
+                <a href="https://emeraldsolutions.tech" target="_blank" rel="noreferrer">
+                  <button className="BusinessWebsiteButton">Click to see their website!</button>
+                </a>
+                <p className="CompanyDescription">
+                  <ul className="ListDescription">
+                    <li className="ListBulletPoint">Programming with Virtual Reality in Unreal Engine 5</li>
+                    <li className="ListBulletPoint">Matterport scanning and implementation</li>
+                    <li className="ListBulletPoint">Designing and architecting 3D home models.</li>
+                  </ul>
+                </p>
+              </div>
             </div>
-            <div className="ProjectSkills">
-              <div className="Skills">
-                <p
-                  >JavaFX
+            <div className="card">
+              <div className="cardbody">
+                <div className="CompanyName">
+                  <h2 className="Title">OMNI Technologies</h2>
+                </div>
+                <a href="https://www.teamomni.com" target="_blank" rel="noreferrer">
+                  <button className="BusinessWebsiteButton">Click to see their website!</button>
+                </a>
+                <p className="CompanyDescription">
+                  <ul className="ListDescription">
+                    <li className="ListBulletPoint">Developed algorithm that corrects data format to fit with OpenRMF</li>
+                    <li className="ListBulletPoint">Working with data points in AWS</li>
+                    <li className="ListBulletPoint">SQL queries and OpenRMF API</li>
+                  </ul>
                 </p>
-                <img src="Images/JavaFXLogo.png" alt="reactlogo" width="120px"></img>
               </div>
-              <div className="Skills">
-                <p
-                  >MySQL
+            </div>
+            <div className="card">
+              <div className="cardbody">
+                <div className="CompanyName">
+                  <h2 className="Title">Bravura Information Technologies</h2>
+                </div>
+                <a href="https://bravurainc.com" target="_blank" rel="noreferrer">
+                  <button className="BusinessWebsiteButton">Click to see their website!</button>
+                </a>
+                <p className="CompanyDescription">
+                  Will be updated once I rotate to Bravura
                 </p>
-                <img src="Images/MySQLLogo.png" alt="reactlogo" width="80px"></img>
-              </div>
-              <div className="Skills">
-                <p
-                  >Excel
-                </p>
-                <img src="Images/ExcelLogo.png" alt="reactlogo" width="80px"></img>
-              </div>
-              <div className="Skills">
-                <p>
-                  Scenebuilder
-                </p>
-                <img src="Images/SceneBuilderLogo.webp" alt="reactlogo" width="50px"></img>
               </div>
             </div>
           </div>
-          <img className="ScannaImage" src="Images/ScannaLogo.png" alt="ScannaLogo"/>
         </div>
       </div>
     </div>

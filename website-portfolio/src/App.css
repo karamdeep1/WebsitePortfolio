@@ -1,6 +1,17 @@
 html{
   scroll-behavior: smooth;
 }
+.HeaderText{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+.ContentDescription{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  width: 600px;
+}
 /* Above Header Section */
 .Header{
   height: 50px;
@@ -9,7 +20,7 @@ html{
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color:#f5efd7;
+  background-color: rgb(24, 24, 24);
 }
 .HeaderButton{
   height: 50px;
@@ -23,6 +34,7 @@ html{
   cursor: pointer;
   margin: 5px;
   background-color: transparent;
+  color: white;
 }
 .HeaderButton span{
   cursor: pointer;
@@ -53,20 +65,23 @@ html{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position:absolute;
+  position:relative;
   padding:0;
   margin:0;
   top:0;
   left:0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 .Home{
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 20vh;
-  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 .Headshot{
   width: 450px;
@@ -84,14 +99,11 @@ html{
 
 /* About Me Section */
 .AboutMe{
-  background-image: url("../public/Images/Background.jpg");
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 100%;
-  position: absolute;
 }
 .AboutMeContent{
   display: flex;
@@ -114,16 +126,14 @@ html{
 
 /* Project Section */
 .Projects{
-  background-image: url("../public/Images/Background.jpg");
   height: 200vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 200%;
-  position: absolute;
-  flex-direction: column;
   gap: 200px;
+  flex-direction: column;
+  background-image: url("../public/Images/whitebackground.jpg");
 }
 .Project{
   display: flex;
@@ -149,7 +159,7 @@ html{
   text-align: center;
 }
 #ProjectContentText{
-  padding-top: 50px;
+  padding-top: 19px;
 }
 .ProjectSkills{
   display: flex;
@@ -159,8 +169,20 @@ html{
   gap: 1em;
   width: 600px;
 }
+.Skills{
+  font-family: 'Roboto Mono', monospace;
+  background-color: #d8d8d8;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  transition: all .2s ease-in-out;
+}
+.Skills:hover{
+  transform: scale(1.1);
+}
 .ProjectButtonLinks{
-  margin-top: 25px;
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -171,11 +193,12 @@ html{
   padding: 10px;
   border-radius: 5px;
   border: 0;
-  background-color: #e4ddc1;
+  background-color: #d8d8d8;
   transition: all .2s ease-in-out;
   font-family: 'Roboto Mono', monospace;
 }
 .ProjectButton:hover{
+  cursor: pointer;
   transform: scale(1.1);
 }
 .ScannaImage{
@@ -208,27 +231,173 @@ html{
 }
 
 
-/* Dynamic Classes */
-.HeaderText{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 35px;
+/* Work Experience*/
+*,*::before,*::after{
+  box-sizing: border-box;
+  font-weight: 400
+}
+.WorkExperience{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-image: url("../public/Images/DefenseInterns.png");
 }
-.Skills{
-  font-family: 'Roboto Mono', monospace;
-  background-color: #e4ddc1;
-  padding: 7px;
-  border-radius: 5px;
+.WorkTitle{
+  font-size: 100px;
+  height: fit-content;
+  margin: 30px;
+}
+.cardlists{
   display: flex;
-  gap: 10px;
-  transition: all .2s ease-in-out;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em 0;
+  margin-top: 30px;
 }
-.Skills:hover{
+.card{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  margin: 15px;
+  background: linear-gradient(180deg, #007cfe 0%, #2d2d2d 100%);
+  -webkit-box-shadow: 0 0 0 -1px rgba(255,255,255,1);
+  -moz-box-shadow: 0 0 0 -1px rgba(255,255,255,1);
+  box-shadow: 0 0 10px -1px rgba(255,255,255,1);
+
+  min-width: 100px;
+  background-size: auto 110%;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+.card:hover{
+  min-width: 600px;
+  background-size: auto 110%;
+  border-radius: 10px;
+}
+.card:nth-of-type(2){
+  background-image: url("../public/Images/GreenGradient.avif");
+}
+.card:nth-of-type(3){
+  background-image: url("../public/Images/BlueGradient.avif");
+}
+.card:nth-of-type(4){
+  background-image: url("../public/Images/RedGradient.jpg");
+}
+.cardbody{
+  padding: 10em;
+}
+.CompanyName{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #2d2d2d 100%);
+  position: absolute;
+  inset: 0;
+}
+.card:hover .CompanyName{
+  all: unset;
+}
+.Title{
+  color: #fffbfb;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+  transform: rotate(-90deg) translateX(-450px);
+  -webkit-transform: rotate(-90deg) translateX(-450px);
+  -moz-transform: rotate(-90deg) translateX(-450px);
+  -ms-transform: rotate(-90deg) translateX(-450px);
+  -o-transform: rotate(-90deg) translateX(-450px);
+}
+.card:hover .Title{
+  font-size: 30px;
+  padding-bottom: 0.5em;
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
+}
+.CompanyDescription{
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease;
+  -webkit-transition: max-height 0.3s ease;
+  -moz-transition: max-height 0.3s ease;
+  -ms-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  width: 500px;
+}
+.card:hover .CompanyDescription{
+  position: relative;
+  opacity: 1;
+  max-height: 100%;
+  transition-delay: 0.3s;
+}
+.ListDescription{
+  padding-left: 0;
+  list-style-position: inside;
+  text-align: left;
+}
+.ListBulletPoint{
+  padding: 5px;
+}
+#DefenseInternsWebsite{
+  width: 600px;
+  font-size: 20px;
+  background-color: white;
+}
+#DIWebButton{
+  text-align: center;
+}
+.BusinessWebsiteButton{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+.card:hover .BusinessWebsiteButton{
+  opacity: 1;
+}
+.BusinessWebsiteButton:hover{
+  cursor: pointer;
   transform: scale(1.1);
 }
-.ContentDescription{
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  width: 600px;
+#DefenseInternTitle{
+  color: white;
+  margin-left: 0;
+}
+.DefenseInternCompanies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.DefenseIntern{
+  display: flex;
+  flex-direction: column;
 }
