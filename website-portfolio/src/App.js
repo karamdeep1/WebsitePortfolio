@@ -1,6 +1,34 @@
 import './App.css';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function App() {
+  const ContactMe = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('service_ewg0czh', 'template_r4xbdqh', form.current, '0OSNlSzvOEw8r7619')
+        .then((result) => {
+            console.log(result.text);
+            e.target.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
+    return(
+      <form ref={form} onSubmit={sendEmail}>
+        <h3>Get In Touch!</h3>
+        <input type="text" placeholder="Your Name" name="user_name" required/> 
+        <input type="email" placeholder="Your Email" name="user_email" required/> 
+        <textarea rows="4" placeholder="Message" name="message" required/>
+        <input className="ProjectButton" id="FormButton" type="submit" value="Send"></input>
+      </form>
+    );
+  }
+
   return (
     <div className="App" id="AppSection">
       <header className="Header">
@@ -16,12 +44,25 @@ function App() {
         <a href="#WorkSection">
           <button className="HeaderButton"><span>Work</span></button>
         </a>
-        <button className="HeaderButton"><span>Contact</span></button>
+        <a href="#ContactSection">
+          <button className="HeaderButton"><span>Contact</span></button>
+        </a>
       </header>
       <div className="Home" id="HomeSection">
         <article>
           <p className="HeaderText" id="HomeHeader">
-            <h1>Welcome!</h1>
+            <h1 id="HomeHeaderText">Welcome!</h1>
+            <div className="SocialButtons">
+              <a href="https://www.linkedin.com/in/karamdeep-bassi-54a6b4272/" target="_blank" rel="noreferrer">
+                <button className="SocialButton"><img className="SocialLogo" id="HomeSocialLogo" src="Images/LinkedinLogo.png" alt="linkedin"></img></button>
+              </a>
+              <a href="https://github.com/karamdeep1" target="_blank" rel="noreferrer">
+                <button className="SocialButton"><img className="SocialLogo" id="HomeSocialLogo" src="Images/GithubLogo.png" alt="Github"></img></button>
+              </a>
+              <a href="mailto:karamdeepbassi@gmail.com" target="_blank" rel="noreferrer">
+                <button className="SocialButton"><img className="SocialLogo" id="HomeSocialLogo" src="Images/MailIcon.png" alt="Email"></img></button>
+              </a>
+            </div>
           </p>
           <p className = "ContentDescription">
             Im Karamdeep Bassi, a high schooler in Maryland aspiring to become a software engineer!
@@ -229,6 +270,27 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="Contact" id="ContactSection">
+        <div className="SocialLinks">
+          <p className="HeaderText" id="ContactText">
+            <h1><span style={{color: "#4c4c4c"}}>Connect With Me!</span></h1>
+          </p>
+          <div className="SocialButtons">
+            <a href="https://www.linkedin.com/in/karamdeep-bassi-54a6b4272/" target="_blank" rel="noreferrer">
+              <button className="SocialButton"><img className="SocialLogo" src="Images/LinkedinLogo.png" alt="linkedin"></img></button>
+            </a>
+            <a href="https://github.com/karamdeep1" target="_blank" rel="noreferrer">
+              <button className="SocialButton"><img className="SocialLogo" src="Images/GithubLogo.png" alt="Github"></img></button>
+            </a>
+            <a href="mailto:karamdeepbassi@gmail.com" target="_blank" rel="noreferrer">
+              <button className="SocialButton"><img className="SocialLogo" src="Images/MailIcon.png" alt="Email"></img></button>
+            </a>
+          </div>
+        </div>
+        <div className="ContactForm">
+          <ContactMe/>
         </div>
       </div>
     </div>

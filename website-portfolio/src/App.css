@@ -53,9 +53,11 @@ html{
 .HeaderButton:hover span {
   padding-right: 25px;
 }
-.HeaderButton:hover span:after{
-  opacity: 1;
-  right: 0;
+#HomeSocialLogo{
+  width: 50px;
+}
+#HomeHeaderText{
+  margin: 20px;
 }
 
 
@@ -94,6 +96,11 @@ html{
   text-decoration: underline 5px;
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#HomeSocialButtons{
+  width: 50px;
 }
 
 
@@ -233,7 +240,7 @@ html{
 }
 
 
-/* Work Experience*/
+/* Work Experience Section */
 *,*::before,*::after{
   box-sizing: border-box;
   font-weight: 400
@@ -388,7 +395,6 @@ html{
   transform: scale(1.1);
 }
 #DefenseInternTitle{
-  color: white;
   margin-left: 0;
 }
 .DefenseInternCompanies{
@@ -400,4 +406,80 @@ html{
 .DefenseIntern{
   display: flex;
   flex-direction: column;
+}
+
+
+/* Contact Section */
+.Contact{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SocialLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.SocialButton{
+  background-color: transparent;
+  border: 0;
+  transition: ease .5s;
+  margin: 0;
+}
+.SocialButton:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: ease .5s;
+}
+.SocialLogo{
+  margin: 0;
+  width: 75px;
+}
+#ContactText{
+  margin: 0;
+}
+.SocialButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.ContactForm{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  width: 700px;
+  border-radius: 10px;
+}
+form h3{
+  color: #555;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #dfdfdf;
+  font-size: 16px;
+}
+#FormButton{
+  font-size: 18px;
+  width: 150px;
+  margin: 20px auto;
 }
