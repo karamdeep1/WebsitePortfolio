@@ -1,0 +1,485 @@
+html{
+  scroll-behavior: smooth;
+}
+.HeaderText{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+.ContentDescription{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  width: 600px;
+}
+/* Above Header Section */
+.Header{
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(24, 24, 24);
+}
+.HeaderButton{
+  height: 50px;
+  width: 170px;
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  background-color: transparent;
+  color: white;
+}
+.HeaderButton span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.HeaderButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.HeaderButton:hover span {
+  padding-right: 25px;
+}
+#HomeSocialLogo{
+  width: 50px;
+}
+#HomeHeaderText{
+  margin: 20px;
+}
+
+
+/* Home Section */
+.App {
+  background-image: url("../public/Images/whitebackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+.Home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.Headshot{
+  width: 450px;
+  border-radius: 50%;
+  border: 5px solid;
+}
+#HomeHeader{
+  width: 600px;
+  text-align: center;
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#HomeSocialButtons{
+  width: 50px;
+}
+
+
+/* About Me Section */
+.AboutMe{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.AboutMeContent{
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+.ComputerImage{
+  width: 500px;
+  border-radius: 50px;
+  border-radius: 50px;
+}
+#AboutMeHeader{
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  line-height: 0px;
+  letter-spacing: 5px;
+}
+
+
+/* Project Section */
+.Projects{
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-direction: column;
+}
+.Project{
+  display: flex;
+}
+.AISumProjectDescription{
+  padding-left: 200px;
+}
+.AISumImage{
+  border-radius: 50px;
+  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+.AISumImage:hover{
+  box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+#ProjectHeaderText{
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  line-height: 0px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#ProjectContentText{
+  padding-top: 19px;
+}
+.ProjectSkills{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1em;
+  width: 600px;
+}
+.Skills{
+  font-family: 'Roboto Mono', monospace;
+  background-color: #d8d8d8;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  transition: all .2s ease-in-out;
+}
+.Skills:hover{
+  transform: scale(1.1);
+}
+.ProjectButtonLinks{
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 18px;
+}
+.ProjectButton{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #d8d8d8;
+  transition: all .2s ease-in-out;
+  font-family: 'Roboto Mono', monospace;
+}
+.ProjectButton:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.ScannaImage{
+  height: 450px;
+  border-radius: 50px;
+  margin-top: 100px;
+  box-shadow: 0 4px 4px 0 rgb(207, 40, 40, 1);
+  transition: 0.3s;
+}
+.ScannaImage:hover{
+  box-shadow: 0px 0px 8px 8px rgb(207, 40, 40, 1);
+  transition: 0.3s;
+}
+.ScannaProjectDescription{
+  padding-right: 100px;
+}
+#ContentLists{
+  width: 600px;
+  display: flex;
+}
+#ScannaButtonLinks{
+  justify-content: right;
+}
+#ScannaTitle{
+  display: flex;
+  justify-content: space-evenly;
+}
+.ScannaGithubButton{
+  margin-top: 60px;
+}
+
+
+/* Work Experience Section */
+*,*::before,*::after{
+  box-sizing: border-box;
+  font-weight: 400
+}
+.WorkExperience{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.WorkTitle{
+  font-size: 100px;
+  height: fit-content;
+  margin: 30px;
+}
+.cardlists{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+.card{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  margin: 15px;
+  background: linear-gradient(180deg, #007cfe 0%, #2d2d2d 100%);
+  -webkit-box-shadow: 0 0 0 -1px rgba(255,255,255,1);
+  -moz-box-shadow: 0 0 0 -1px rgba(255,255,255,1);
+  box-shadow: 0 0 10px -1px rgba(255,255,255,1);
+
+  min-width: 100px;
+  background-size: auto 110%;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+.card:hover{
+  min-width: 600px;
+  background-size: auto 110%;
+  border-radius: 10px;
+}
+.card:nth-of-type(2){
+  background-image: url("../public/Images/GreenGradient.avif");
+}
+.card:nth-of-type(3){
+  background-image: url("../public/Images/BlueGradient.avif");
+}
+.card:nth-of-type(4){
+  background-image: url("../public/Images/RedGradient.jpg");
+}
+.cardbody{
+  padding: 10em;
+}
+.CompanyName{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #2d2d2d 100%);
+  position: absolute;
+  inset: 0;
+}
+.card:hover .CompanyName{
+  all: unset;
+}
+.Title{
+  color: #fffbfb;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+  transform: rotate(-90deg) translateX(-450px);
+  -webkit-transform: rotate(-90deg) translateX(-450px);
+  -moz-transform: rotate(-90deg) translateX(-450px);
+  -ms-transform: rotate(-90deg) translateX(-450px);
+  -o-transform: rotate(-90deg) translateX(-450px);
+}
+.card:hover .Title{
+  font-size: 30px;
+  padding-bottom: 0.5em;
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
+}
+.CompanyDescription{
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease;
+  -webkit-transition: max-height 0.3s ease;
+  -moz-transition: max-height 0.3s ease;
+  -ms-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  width: 500px;
+}
+.card:hover .CompanyDescription{
+  position: relative;
+  opacity: 1;
+  max-height: 100%;
+  transition-delay: 0.3s;
+}
+.ListDescription{
+  padding-left: 0;
+  list-style-position: inside;
+  text-align: left;
+}
+.ListBulletPoint{
+  padding: 5px;
+}
+#DefenseInternsWebsite{
+  width: 600px;
+  font-size: 20px;
+}
+#DIWebButton{
+  text-align: center;
+}
+.BusinessWebsiteButton{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+.card:hover .BusinessWebsiteButton{
+  opacity: 1;
+}
+.BusinessWebsiteButton:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#DefenseInternTitle{
+  margin-left: 0;
+}
+.DefenseInternCompanies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.DefenseIntern{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Contact Section */
+.Contact{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SocialLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.SocialButton{
+  background-color: transparent;
+  border: 0;
+  transition: ease .5s;
+  margin: 0;
+}
+.SocialButton:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: ease .5s;
+}
+.SocialLogo{
+  margin: 0;
+  width: 75px;
+}
+#ContactText{
+  margin: 0;
+}
+.SocialButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.ContactForm{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  width: 700px;
+  border-radius: 10px;
+}
+form h3{
+  color: #555;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #dfdfdf;
+  font-size: 16px;
+}
+#FormButton{
+  font-size: 18px;
+  width: 150px;
+  margin: 20px auto;
+}
