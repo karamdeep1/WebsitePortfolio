@@ -151,7 +151,7 @@ html{
   padding-left: 200px;
 }
 .AISumImage{
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 1);
   transition: 0.3s;
 }
