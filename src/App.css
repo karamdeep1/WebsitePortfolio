@@ -256,6 +256,7 @@ html{
   font-weight: 400
 }
 .WorkExperience{
+  margin-top: 15vh;
   width: 100vw;
   height: 100vh;
 }
