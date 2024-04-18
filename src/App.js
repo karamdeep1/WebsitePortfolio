@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useRef } from 'react';
+import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 function App() {
@@ -77,11 +78,7 @@ function App() {
             <h1>About Me</h1>
           </p>
           <p className="ContentDescription">
-            I grew up in Maryland and I always was on a computer doing something. 
-            I eventually discovered programming and knew I found what I wanted to do as a career.
-            As of now I am a senior in High School and work as an Defense Intern (More about that in the work section). As a Defense Intern I
-            rotate between 4 defense contractors, spending 3 months at each doing software engineering
-            and cyber security. I am familiar with Java, HTML, CSS, Javascript, ReactJS, and am currently focusing C++.
+            I grew up in Maryland and in my free time I like to workout or go out with my friends. I also like looking at cars!
           </p>
         </div>
       </div>
@@ -146,7 +143,7 @@ function App() {
                 </p>
                 <div className="ScannaGithubButton">
                   <a href="https://github.com/karamdeep1/Scanna" target="_blank" rel="noreferrer">
-                    <button className="ProjectButton"><img src="Images/GithubLogo.png" alt="Github" width="50px"/></button>
+                    <button className="ProjectButton"><img id="HomeSocialLogo" src="Images/GithubLogo.png" alt="Github" width="50px"/></button>
                   </a>
                 </div>
               </div>
@@ -216,7 +213,7 @@ function App() {
                 <p className="CompanyDescription">
                   <ul className="ListDescription">
                     <li className="ListBulletPoint">IT help desk answering tickets of various tiers</li>
-                    <li className="ListBulletPoint">Network administration</li>
+                    <li className="ListBulletPoint">Network administration ensuring security</li>
                     <li className="ListBulletPoint">Prepared laptops for new/existing employees</li>
                   </ul>
                 </p>
@@ -249,9 +246,10 @@ function App() {
                 </a>
                 <p className="CompanyDescription">
                   <ul className="ListDescription">
-                    <li className="ListBulletPoint">Developed algorithm that corrects data format to fit with OpenRMF</li>
-                    <li className="ListBulletPoint">Working with data points in AWS</li>
-                    <li className="ListBulletPoint">SQL queries and OpenRMF API</li>
+                    <li className="ListBulletPoint">Participated in taking the stakeholders problems and figured out a solution along with requirements</li>
+                    <li className="ListBulletPoint">Developed tool that automates transforming vulnerability data to Checklist format and uploading to OpenRMF through their API </li>
+                    <li className="ListBulletPoint">Developed algorithm to persist chats for users on company's version of ChatGPT</li>
+                    <li className="ListBulletPoint">Utilized AWS S3 Buckets AWS Lambda Functions and EC2 Instances</li>
                   </ul>
                 </p>
               </div>

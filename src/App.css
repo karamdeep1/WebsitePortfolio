@@ -3,18 +3,18 @@ html{
 }
 .HeaderText{
   font-family: 'Roboto Mono', monospace;
-  font-size: 35px;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
 }
 .ContentDescription{
   font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  width: 600px;
+  font-size: 1.5vw;
+  width: 30vw;
 }
 /* Above Header Section */
 .Header{
-  height: 50px;
+  height: 6vh;
   width: 100vw;
   text-align: center;
   position: fixed;
@@ -23,11 +23,11 @@ html{
   background-color: rgb(24, 24, 24);
 }
 .HeaderButton{
-  height: 50px;
-  width: 170px;
+  height: 5vh;
+  width: 10vw;
   position: relative;
   font-family: 'Roboto Mono', monospace;
-  font-size: 25px;
+  font-size: 2.5vh;
   text-align: center;
   border: none;
   transition: all 0.5s;
@@ -54,7 +54,7 @@ html{
   padding-right: 25px;
 }
 #HomeSocialLogo{
-  width: 50px;
+  width: 3vw;
 }
 #HomeHeaderText{
   margin: 20px;
@@ -79,19 +79,20 @@ html{
   align-items: center;
 }
 .Home{
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: fit-content;
+  width: fit-content;
 }
 .Headshot{
-  width: 450px;
+  width: 25vw;
   border-radius: 50%;
   border: 5px solid;
 }
 #HomeHeader{
-  width: 600px;
+  width: 27vw;
   text-align: center;
   text-decoration: underline 5px;
   text-decoration-thickness: 2px;
@@ -100,7 +101,7 @@ html{
   flex-direction: column;
 }
 #HomeSocialButtons{
-  width: 50px;
+  width: 10vw;
 }
 
 
@@ -121,7 +122,7 @@ html{
   padding-left: 60px;
 }
 .ComputerImage{
-  width: 500px;
+  width: 30vw;
   border-radius: 50px;
   border-radius: 50px;
 }
@@ -141,19 +142,24 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 20vh;
   flex-direction: column;
 }
 .Project{
   display: flex;
 }
 .AISumProjectDescription{
-  padding-left: 200px;
+  padding-left: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
 }
 .AISumImage{
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 1);
   transition: 0.3s;
+  height: 70vh;
 }
 .AISumImage:hover{
   box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 1);
@@ -176,7 +182,7 @@ html{
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 1em;
-  width: 600px;
+  width: 50vw;
 }
 .Skills{
   font-family: 'Roboto Mono', monospace;
@@ -205,15 +211,16 @@ html{
   background-color: #d8d8d8;
   transition: all .2s ease-in-out;
   font-family: 'Roboto Mono', monospace;
+  margin-left: 2vw;
 }
 .ProjectButton:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
 .ScannaImage{
-  height: 450px;
+  height: 25vw;
   border-radius: 50px;
-  margin-top: 100px;
+  margin-top: 10vh;
   box-shadow: 0 4px 4px 0 rgb(207, 40, 40, 1);
   transition: 0.3s;
 }
@@ -222,7 +229,10 @@ html{
   transition: 0.3s;
 }
 .ScannaProjectDescription{
-  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
 }
 #ContentLists{
   width: 600px;
@@ -248,14 +258,9 @@ html{
 .WorkExperience{
   width: 100vw;
   height: 100vh;
-  /*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
 }
 .WorkTitle{
-  font-size: 100px;
+  font-size: 6vw;
   height: fit-content;
   margin: 30px;
 }
@@ -273,8 +278,8 @@ html{
   text-align: center;
   position: relative;
   overflow: hidden;
-  width: 70px;
-  height: 550px;
+  width: 5vw;
+  height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -298,7 +303,7 @@ html{
   -o-transition: .5s ease;
 }
 .card:hover{
-  min-width: 600px;
+  min-width: 33vw;
   background-size: auto 110%;
   border-radius: 10px;
 }
@@ -325,6 +330,7 @@ html{
 .Title{
   color: #fffbfb;
   text-transform: uppercase;
+  font-size: 1.3vw;
   white-space: nowrap;
   margin: 0;
   transform: rotate(-90deg) translateX(-450px);
@@ -334,7 +340,7 @@ html{
   -o-transform: rotate(-90deg) translateX(-450px);
 }
 .card:hover .Title{
-  font-size: 30px;
+  font-size: 1.3vw;
   padding-bottom: 0.5em;
   transform: unset;
   -webkit-transform: unset;
@@ -342,9 +348,20 @@ html{
   -ms-transform: unset;
   -o-transform: unset;
 }
+@media (max-width: 1400px) {
+  .Title {
+    font-size: 1.5vw;
+    position: relative;
+    bottom: 15vh;
+  }
+  .card:hover .Title{
+    font-size: 1.3vw;
+    top: 1vh;
+  }
+}
 .CompanyDescription{
   position: absolute;
-  font-size: 18px;
+  font-size: 1.5vw;
   color: #fff;
   margin: 0;
   max-height: 0;
@@ -354,7 +371,8 @@ html{
   -moz-transition: max-height 0.3s ease;
   -ms-transition: max-height 0.3s ease;
   -o-transition: max-height 0.3s ease;
-  width: 500px;
+  width: 30vw;
+  height: 20vh;
 }
 .card:hover .CompanyDescription{
   position: relative;
@@ -369,10 +387,11 @@ html{
 }
 .ListBulletPoint{
   padding: 5px;
+  font-size: 1vw;
 }
 #DefenseInternsWebsite{
-  width: 600px;
-  font-size: 20px;
+  width: 30vw;
+  font-size: 2vh;
 }
 #DIWebButton{
   text-align: center;
@@ -386,7 +405,7 @@ html{
   transition: all .2s ease-in-out;
   font-family: 'Roboto Mono', monospace;
   color: white;
-  font-size: 20px;
+  font-size: 1.5vw;
   opacity: 0;
 }
 .card:hover .BusinessWebsiteButton{
@@ -408,7 +427,6 @@ html{
 .DefenseIntern{
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 }
@@ -441,7 +459,7 @@ html{
 }
 .SocialLogo{
   margin: 0;
-  width: 75px;
+  width: 5vw;
 }
 #ContactText{
   margin: 0;
@@ -466,14 +484,14 @@ form{
   display: flex;
   flex-direction: column;
   padding: 100px;
-  width: 700px;
+  width: 60vw;
   border-radius: 10px;
 }
 form h3{
   color: #555;
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 3vw;
 }
 form input, form textarea{
   border: 0;
@@ -485,6 +503,6 @@ form input, form textarea{
 }
 #FormButton{
   font-size: 18px;
-  width: 150px;
+  width: 10vw;
   margin: 20px auto;
 }
