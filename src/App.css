@@ -258,7 +258,7 @@ html{
 .WorkExperience{
   margin-top: 15vh;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
 }
 .WorkTitle{
   font-size: 6vw;
@@ -431,7 +431,27 @@ html{
   justify-content: center;
   align-items: center;
 }
-
+.SURVICEEngineering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#SURVICEHeaderText{
+  text-decoration: underline 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20px;
+  color: #08607e;
+  line-height: 0px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#SURVICEContentText{
+  color: #3796b6;
+  padding-top: 19px;
+}
+#SURVICEContentDescription{
+  color: #3796b6;
+}
 
 /* Contact Section */
 .Contact{

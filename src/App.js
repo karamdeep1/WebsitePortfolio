@@ -66,7 +66,7 @@ function App() {
             </div>
           </p>
           <p className = "ContentDescription">
-            Im Karamdeep Bassi, a high schooler in Maryland aspiring to become a software engineer!
+            My name is Karamdeep Bassi. I'm a freshman at University of Maryland: Baltimore County. I currently intern as a Software Engineer at SURVICE Engineering! Welcome to my portfolio!
           </p>
         </article>
         <img className="Headshot" src="Images/Headshot.png" alt="Headshot"/>
@@ -263,10 +263,32 @@ function App() {
                   <button className="BusinessWebsiteButton">Click to see their website!</button>
                 </a>
                 <p className="CompanyDescription">
-                  Will be updated once I rotate to Bravura
+                <ul className="ListDescription">
+                    <li className="ListBulletPoint">Opened computers and wiped their hard drives</li>
+                    <li className="ListBulletPoint">CMMC Auditing </li>
+                    <li className="ListBulletPoint">Partook in discussion on improving software for blimps</li>
+                  </ul>
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="SURVICEEngineering">
+          <div className="SURVICEEngineeringInfo">
+            <p className="HeaderText" id="SURVICEHeaderText">
+              <h1><span style={{color: "#08607e"}}>SURVICE Engineering</span></h1>
+            </p>
+            <p className="ContentDescription" id="SURVICEContentText">
+              Software Engineering intern working on programming drones, radios and Android Studio application
+            </p>
+            <ul className="ContentDescription" id="SURVICEContentDescription">
+                  <li>Used Java for retrieving radio battery percentage through api every minute</li>
+                  <li>Investigated logs for drone incident</li>
+                  <li>Set message rates in Python for messages sent from drone to controller</li>
+                </ul>
+          </div>
+          <div className="SURVICEEngineeringLogo">
+            <img className="SURVICELogo" src="Images/SURVICEEngineeringLogo.png" alt="SURVICELogo"/>
           </div>
         </div>
       </div>
