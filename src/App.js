@@ -66,7 +66,7 @@ function App() {
             </div>
           </p>
           <p className = "ContentDescription">
-            My name is Karamdeep Bassi. I'm a freshman at University of Maryland: Baltimore County. I currently intern as a Software Engineer at SURVICE Engineering! Welcome to my portfolio!
+            My name is Karamdeep Bassi. I'm a freshman at University of Maryland: Baltimore County. Welcome to my portfolio!
           </p>
         </article>
         <img className="Headshot" src="Images/Headshot.png" alt="Headshot"/>
